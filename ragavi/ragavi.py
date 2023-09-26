@@ -1252,9 +1252,9 @@ def link_plots(all_figures=None, all_fsources=None, all_ebars=None):
 
             # ensure that the cds and its view are the same otherwise error
             all_figures[f].renderers[_i].data_source = shared_cds
-            all_figures[f].renderers[_i].view.source = shared_cds
+            #all_figures[f].renderers[_i].view.source = shared_cds
             fig1.renderers[_i].data_source = shared_cds
-            fig1.renderers[_i].view.source = shared_cds
+            #fig1.renderers[_i].view.source = shared_cds
 
             all_fsources[0][_i].add(all_fsources[f][_i].data[f"y{f+1}"],
                                     name=f"y{f+1}")
